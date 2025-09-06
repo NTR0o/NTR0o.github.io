@@ -1,0 +1,17 @@
+open git bash in folder
+
+launch
+python ip_logger_server.py
+
+view logs
+python view_logs.py
+
+
+
+
+clear logs
+python clear_logs.py
+
+
+export logs
+python export_logs.py
