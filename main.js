@@ -9,8 +9,9 @@ const groups = {
 function filterSelection(category) {
   const galleryItems = document.querySelectorAll(".song");
 
-  if (category === "All") {
-    activeFilters.length = 0; // reset
+  // Reset filters when "All" is clicked
+  if (category.toLowerCase() === "all") {
+    activeFilters.length = 0; 
   } else {
     const idx = activeFilters.indexOf(category);
     if (idx > -1) {
@@ -20,12 +21,14 @@ function filterSelection(category) {
     }
   }
 
+  // Update gallery visibility
   galleryItems.forEach(item => {
     const categories = item.dataset.category.toLowerCase().split(" ");
-    const shouldShow = matchesGroups(categories, activeFilters);
+    const shouldShow = activeFilters.length === 0 || matchesGroups(categories, activeFilters);
     item.style.display = shouldShow ? "block" : "none";
   });
 
+  // Update filter tags (don’t include "All")
   updateActiveFiltersUI();
 }
 
@@ -35,7 +38,7 @@ function matchesGroups(categories, filters) {
       group.includes(f.toLowerCase())
     );
     return (
-      selectedInGroup.length === 0 || // no filters in this group
+      selectedInGroup.length === 0 || 
       selectedInGroup.some(f => categories.includes(f.toLowerCase()))
     );
   });
