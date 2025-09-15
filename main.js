@@ -9,26 +9,26 @@ const groups = {
 function filterSelection(category) {
   const galleryItems = document.querySelectorAll(".song");
 
-  // Reset filters when "All" is clicked
+  //resetting filters
   if (category.toLowerCase() === "all") {
     activeFilters.length = 0; 
   } else {
     const idx = activeFilters.indexOf(category);
     if (idx > -1) {
-      activeFilters.splice(idx, 1); // remove if clicked again
+      activeFilters.splice(idx, 1);
     } else {
-      activeFilters.push(category); // add filter
+      activeFilters.push(category);
     }
   }
 
-  // Update gallery visibility
+  
   galleryItems.forEach(item => {
     const categories = item.dataset.category.toLowerCase().split(" ");
     const shouldShow = activeFilters.length === 0 || matchesGroups(categories, activeFilters);
     item.style.display = shouldShow ? "block" : "none";
   });
 
-  // Update filter tags (don’t include "All")
+ 
   updateActiveFiltersUI();
 }
 
@@ -62,3 +62,4 @@ function updateActiveFiltersUI() {
     container.appendChild(tag);
   });
 }
+
