@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="\main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Discography</title>
+    <link rel="icon" type="image/x-icon" href="/images/icons/favico/favico.png">
+  </head>
+
+  <body>
+    <div class="head">
+      <a href="\">Home</a>
+      <a href="\listen\">Listen</a>
+      <a href="\tour\">Tour</a>
+      <a href="\about\">About me</a>
+      <a href="\contact\">Contact me</a>
+    </div>
+
+    <h4> Discography</h4>
+
+    <div class="activeFilters"></div>
+
+    <div class="filterDropdown">
+      <button class="filterDropbtn">Filter</button>
+      <div class="dropdown-content">
+        <div id="myBttnContainer">
+          <button class="myBtn" onclick="filterSelection('all')">Show all</button>
+          <button class="myBtn" onclick="filterSelection('rnb')">RnB</button>
+          <button class="myBtn" onclick="filterSelection('hip-hop')">Hip-Hop</button>
+          <button class="myBtn" onclick="filterSelection('pop')">Pop</button>
+          <button class="myBtn" onclick="filterSelection('cinematic')">Cinematic</button>
+          <button class="myBtn" onclick="filterSelection('mixes')">Mixes</button>
+          <button class="myBtn" onclick="filterSelection('production')">Production</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="musicGallery">
+      <div class="song" data-category="hip-hop mixes">
+        <a href="https://soundcloud.com/unsur3/swagrific" target="_blank">
+          <img src="/images/discog_covers/cover_Swag.jpg" alt="Swagrific">
+          
+        </a><p> Swagrific - Unur3</p>
+      </div>
+
+      <div class="song" data-category="hip-hop mixes">
+        <a href="https://soundcloud.com/unsur3/cant-be-broke" target="_blank">
+          <img src="/images/discog_covers/cover_Swag.jpg" alt="Can't be broke">
+        </a><p>Can't be broke - Unur3</p>
+      </div>
+
+      <div class="song" data-category="rnb production mixes">
+        <a href="https://open.spotify.com/track/39t65PpnrB6NR2WxCiuwyq" target="_blank">
+          <img src="/images/discog_covers/tonight.jpg" alt="Tonight">
+        </a><p>Tonight - Not Today Roo</p>
+      </div>
+
+      <div class="song" data-category="production cinematic">
+        <a href="https://soundcloud.com/nottodayroo/flos-meus" target="_blank">
+          <img src="/images/discog_covers/Flos Meus.jpg" alt="Flos Meus">
+        </a><p> Flos Meus - Not Today Roo</p>
+      </div>
+
+      <div class="song" data-category="hip-hop mixes">
+        <a href="https://soundcloud.com/unsur3/not-enough" target="_blank">
+          <img src="/images/discog_covers/not_enough.png" alt="Not Enough">
+        </a><p> Not enough - Unsur3</p>
+      </div>
+
+      <div class="song" data-category="hip-hop mixes">
+        <a href="https://www.youtube.com/watch?v=V8we67xpn0A" target="_blank">
+          <img src="/images/discog_covers/BLP.png" alt="BLP">
+        </a><p>BLP Kosher On The Radar</p>
+      </div>
+      <div class ="song" data-category="hip-hop mixes">
+        <a href ="https://open.spotify.com/track/4KndrAfdmZjQfeGSbsFpRQ?si=595288f2ca694ce0" target="_blank">
+            <img src ="/images/discog_covers/BigJack.png">
+        </a><p> BigJack - Ari Phillips</p>
+      </div>
+      <div class ="song" data-category="hip-hop mixes">
+        <a href ="https://open.spotify.com/track/1A0voyJEhidqYCCcd847pm?si=bfead7dc35ed4d8f"><img src ="/images/discog_covers/NIGHT_LIGHTS.jfif"></a><p>NIGHT LIGHTS - Ari Phillips</p>
+      </div>
+      <div class ="song" data-category="hip-hop mixes">
+        <a href ="https://open.spotify.com/track/7sTgstjH1WTkgvDyBrcTyy?si=409efd495aa5435d"><img src ="/images/discog_covers/Get_it_On.jfif"></a> <p> Get it on - Ari Phillips</p>
+      </div>
+      <div class ="song" data-category="rnb mixes">
+        <a href ="https://soundcloud.com/nottodayroo/on-her-skin-ft-unsur-1217/s-hJebXGTIYEB?si=b1cb5765d32142f29abc4876d314657e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+            <img src ="/images/discog_covers/tat.jpg">
+        </a><p> On her skin - Not Today Roo x Unsur3</p>
+      </div>
+      <div class = "song" data-category="rnb pop production">
+        <a href = "https://soundcloud.com/nottodayroo/make-up-instrumental/s-v1CEpn7GrS3?si=1c7a6ad6a247436882e5dbaddad0f3cb&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><img src = "/images/discog_covers/makeUpInst.jpg"></a><p> Make Up instrumental - Not Today Roo</p>
+      </div>
+      <div class = "song" data-category="rnb pop production mixes"> 
+        <a href = "https://soundcloud.com/nottodayroo/makeupdemo/s-upjd3XcTJtI?si=6747e402b29542eea5dd9a4ebe787298&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><img src ="/images/discog_covers/makeupDemo.jpg"></a><p>Make Up Demo - Not Today Roo</p>
+      </div>
+      <div class = "song" data-category="hip-hop mixes">
+        <a href ="https://soundcloud.com/nottodayroo/bad-bitches/s-wr8F2Pd7JO8?si=d2f4900808e14029bf421ecd56d89874&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><img src ="/images/discog_covers/bad_bitches.jpg"></a><p> bad bitches - Unsur3</p>
+      </div>
+      <div class ="song" data-category="hip-hop mixes production">
+        <a href = "https://soundcloud.com/nottodayroo/penny-sex/s-NEEjJcBWxA3?si=1199baa56ce843cbaaf3789adc320d09&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><img src ="/images/discog_covers/penny_sex.jpg"></a><p>Penny sex - Scrillium x Not Today Roo</p>
+      </div>
+      <div class ="song" data-category="mixes rnb">
+        <a href = "https://soundcloud.com/nottodayroo/need-a-man/s-pfF0Ne4vrd1?si=66056a45c9844d23bd867ecc847df23e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><img src = "/images/discog_covers/NAM.jpg"></a> <p>(You don't) Need a man - Not Today Roo</p>
+      </div>
+      <div class ="song" data-category = "mixes rnb"> 
+        <a href ="https://soundcloud.com/nottodayroo/shine-1-28-2/s-BTCk2JW6TML?si=db94d994a83d4a66a9308f01e7495943&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><img src = "/images/discog_covers/shine.png"></a><p> Shine -  Not Today Roo</p>
+        </div>
+      <div class = "song" data-category ="mixes hip-hop"><a href ="https://open.spotify.com/track/0BWhRDZajVPoO3qaLbeCDJ?si=3ad5dcd59fd343bb"><img src ="/images/discog_covers/love_hate.jpg"></a><p>love hate - xaviersobased</p>
+      </div>
+      
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
