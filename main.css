@@ -1,4 +1,3 @@
-
 body {
     background-color: black;
     color:white;
@@ -149,15 +148,6 @@ p{
 }
 
 
-footer{
-    background-color: black;
-    color: white;
-    font-size: small;
-    display: flex;
-    justify-content: center;
-    align-self: flex-end;
-    height: 100px;
-}
 
 
 
@@ -253,7 +243,7 @@ h3 {
 }
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("images/general/console.jpg");
-    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -280,6 +270,16 @@ h3 {
     font-size: 1.2rem;
     margin-bottom: 20px;
 
+}
+
+footer {
+    display: flex;
+    justify-content: center;  /* horizontal centering */
+    align-items: center;      /* vertical centering inside footer */
+    padding: 20px 0;
+    
+    color: white;
+    font-size: small;
 }
 
 .btn{
@@ -408,9 +408,9 @@ transition: transform 0.3s ease;
     flex-wrap: wrap;
     gap: 8px;
     margin: 10px 0;
-  }
+}
   
-  .filterTag {
+.filterTag {
     background: #eee;
     color: #333;
     padding: 4px 10px;
@@ -419,9 +419,9 @@ transition: transform 0.3s ease;
     display: flex;
     align-items: center;
     gap: 6px;
-  }
+ }
   
-  .filterTag button.removeFilter {
+.filterTag button.removeFilter {
     background: none;
     border: none;
     color: #666;
@@ -429,9 +429,21 @@ transition: transform 0.3s ease;
     cursor: pointer;
     line-height: 1;
     padding: 0;
-  }
-  
-  .filterTag button.removeFilter:hover {
+}
+
+.filterTag button.removeFilter:hover {
     color: #000;
-  }
+}
+  
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
   
