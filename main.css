@@ -121,9 +121,9 @@ p{
 }
 .aboutImages img{
 
-    width: 400px;
-    height: 400px;
-    max-width: 400px;
+    width: 415px;
+    height: 330px;
+    max-width: 415px;
     width: 90%;
     opacity: 1;
     aspect-ratio: 1/1;
@@ -443,6 +443,7 @@ transition: transform 0.3s ease;
     border: 0;
 }
   
+
 
 
 
