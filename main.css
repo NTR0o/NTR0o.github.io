@@ -121,8 +121,8 @@ p{
 }
 .aboutImages img{
 
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     max-width: 300px;
     width: 90%;
     opacity: 1;
@@ -443,4 +443,5 @@ transition: transform 0.3s ease;
     border: 0;
 }
   
+
 
